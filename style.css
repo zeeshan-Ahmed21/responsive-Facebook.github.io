@@ -1,0 +1,662 @@
+body{
+    background-color: #e6ede8;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* background-color: #e6ede8; */
+    /* border: 1px solid; */
+    height: 100vh;
+    width: 100vw;
+}
+/* The Top Navbar */
+.navbar{
+    position: fixed;
+    z-index: 999;
+    width: 100vw;
+    background-color: white;
+    /* border: 1px solid; */
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.mobnavbar{
+    display: none;
+}
+.mobnavbar1{
+    display: none;
+}
+.mobnavbar2{
+    display: none;
+}
+.search{
+    display: flex;
+    align-items: self-end;
+    margin-left: 20px;
+}
+.topsearch{
+    margin-bottom: 5px;
+    border: none;
+    display: flex;
+    align-items: self-end;
+    height: 40px;
+    width: 220px;
+    padding: 16px;
+    border-radius: 20px;
+    background-color: #e6ede8;
+}
+.link{
+    display: flex;
+    align-items: self-end;
+}
+.menu{
+    display: flex;
+    align-items: self-end;
+}
+.fa-brands.fa-facebook{
+    font-size: 37px;
+    color: blue;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+.icon{
+    font-size: 25px;
+    margin: 0px 25px;
+}
+.icon img{
+    display: flex;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.icon:hover{
+    background-color:  #e6ede8;
+    cursor: pointer;
+}
+/* The Left Navbar */
+.left{
+    position: fixed;
+    left: 0px;
+    top: 50px;
+    /* border: 1px solid; */
+    height: 100vh;
+    width: 320px;
+    background-color:  #e6ede8;
+}
+.left h3{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.left img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.lefticon{
+    margin-left: 14px;
+    font-size: 16px;
+}
+#icon3{
+    margin-right: 27px;
+    font-size: 16px;
+    color: blue;
+}
+.icon2:hover{
+    background-color:  #f9fcfa;
+    cursor: pointer;
+}
+/* The Right Navbar */
+.right{
+    position: fixed;
+    right: 0px;
+    top: 50px;
+    /* border: 1px solid; */
+    height: 100vh;
+    width: 320px;
+    float: right;
+    background-color:  #e6ede8  ;
+}
+.right h3{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.right img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.righticon{
+    margin-left: 14px;
+    font-size: 16px;
+}
+#icon3{
+    margin-right: 27px;
+    font-size: 15px;
+}
+/* The Center */
+.centre{
+    /* border: 1px solid; */
+    /* height: 100vh; */
+    width: 650px;
+    margin: auto;
+}
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid; */
+    height: 217px;
+    width: 100%;
+    position: relative;
+    top: 70px;
+    background-color: white;
+    border-radius: 10px;
+}
+.card1{
+    /* border: 1px solid; */
+    border-radius: 15px;
+    height: 200px;
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sec1{
+    /* border: 1px solid; */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-image: url(WhatsApp\ Image\ 2024-04-28\ at\ 23.24.27_90ec12cd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+}
+.card1 h4{
+    text-align: center;
+}
+#plus{
+    font-size: 30px;
+    background-color: blue;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    width: 30px;
+    justify-content: center;
+
+}
+.card2{
+    /* border: 1px solid; */
+    border-radius: 15px;
+    height: 200px;
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(https://m.media-amazon.com/images/I/51h+iYDLj+L._AC_UF1000,1000_QL80_.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-between;
+}
+.card2 h4{
+    color: white;
+    margin-left: 10px;
+}
+.card2 img{
+    margin-left: -58px;
+    margin-top: 5px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 5px solid blue;
+}
+.card3{
+    /* border: 1px solid; */
+    border-radius: 15px;
+    height: 200px;
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(https://getimagehub.com/wp-content/uploads/2023/12/Whatsapp-DP-with-iphone-for-Girls.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-between;
+}
+.card3 h4{
+    color: white;
+    margin-left: 10px;
+}
+.card3 img{
+    margin-left: -58px;
+    margin-top: 5px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 5px solid blue;
+}
+.card4{
+    /* border: 1px solid; */
+    border-radius: 15px;
+    height: 200px;
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(https://miro.medium.com/v2/resize:fit:495/0*xFuo_UNWchLZ8bqS.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-between;
+}
+.card4 h4{
+    color: white;
+    margin-left: 10px;
+}
+.card4 img{
+    margin-left: -58px;
+    margin-top: 5px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 5px solid blue;
+}
+/* The Center Bottom */
+.bottom1{
+    /* border: 1px solid; */
+    border-radius: 10px;
+    background-color: white;
+    height: 120px;
+    width: 100%;
+    position: relative;
+    top: 95px; 
+}
+#sec1{
+    display: flex;
+    align-items: center;
+    /* border: 1px solid; */
+    border-radius: 10px;
+    height: 60px;
+    width: 100%;
+}
+#sec1 img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 9px;
+}
+.sec1search{
+    margin-bottom: 5px;
+    border: none;
+    display: flex;
+    align-items: self-end;
+    height: 40px;
+    width: 572px;
+    padding: 16px;
+    margin-left: 10px;
+    border-radius: 20px;
+    background-color: #e6ede8;
+    font-size: 17px;
+}
+.postsec{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 10px;
+    /* border: 1px solid; */
+    height: 57px;
+    width: 100%;
+    align-items: center;
+    font-size: 18px;
+    /* color: #e6ede8; */
+    font-weight: bolder;
+}
+.postheading{
+    color: #5b5e5c;
+}
+#posticon1{
+    color: red;
+    font-size: 25px;
+    margin-right: 8px;
+}
+#posticon2{
+    color: green;
+    font-size: 25px;
+    margin-right: 8px;
+}
+#posticon3{
+    color: yellow;
+    font-size: 25px;
+    margin-right: 8px;
+}
+/* The Center Section Is Center post section */
+.centerpost{
+    /* border: 1px solid; */
+    border-radius: 10px;
+    height: 680px;
+    width: 100%;
+    position: relative;
+    top: 105px;
+    background-color: white;
+    margin-top: 10px;
+}
+.center1{
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid; */
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;
+}
+.center1 img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 9px;
+}
+.heading{
+    display: inline-block;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 7px;
+}
+.center2{
+    /* border: 1px solid; */
+    border-radius: 10px;
+    height: 530px;
+    width: 100%;
+    background-image: url(https://www.pakpost.gov.pk/images/gpo.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.center3{
+    /* border: 1px solid; */
+    border-radius: 10px;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.center3icon{
+    font-size: 18px;
+    margin-left: 9px;
+}
+#heart{
+    color: red;
+}
+#Thumb{
+    color: blue;
+}
+.center3p{
+    margin-right: 9px;
+}
+.center4{
+    /* border: 1px solid; */
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 21px;
+    color: #5b5e5c;
+}
+#center4icon{
+    color: black;
+}
+/* The Center Section 1 */
+.center21{
+    /* border: 1px solid; */
+    border-radius: 10px;
+    height: 530px;
+    width: 100%;
+    background-image: url(https://zameenblog.s3.amazonaws.com/blog/wp-content/uploads/2022/03/Body-2-7-1024x640.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.center22{
+    /* border: 1px solid; */
+    border-radius: 10px;
+    height: 530px;
+    width: 100%;
+    background-image: url(https://www.icit-digital.org/admin/docs/content/featured/6591d6e55afd5_582.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.center23{
+    /* border: 1px solid; */
+    border-radius: 10px;
+    height: 530px;
+    width: 100%;
+    background-image: url(https://media.licdn.com/dms/image/D4D12AQHZH5oIi__byg/article-cover_image-shrink_600_2000/0/1689701048457?e=2147483647&v=beta&t=4w8hptUm4RhxyjIs1mWKygq8xGsGQqZwzksKGnJVjXo);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.center24{
+    /* border: 1px solid; */
+    border-radius: 10px;
+    height: 530px;
+    width: 100%;
+    background-image: url(https://www.forbes.com/advisor/wp-content/uploads/2022/08/web_developer.jpeg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.center25{
+    /* border: 1px solid; */
+    border-radius: 10px;
+    height: 530px;
+    width: 100%;
+    background-image: url(https://t3.ftcdn.net/jpg/06/05/11/44/360_F_605114451_r2NK3yDYEscvMBSsR3KKjoQZ6Q0lwKq5.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+/* Responsive */
+@media only screen and (max-width: 480px) {
+    /* Top Navbar */
+    .link{
+        display: none;
+    }
+    .topsearch{
+        display: none;
+    }
+    .search{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .bottom1{
+        display: none;
+    }
+    .mobnavbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* border: 1px solid; */
+        height: 50px;
+        width: 100%;
+    }
+    .mobicon{
+        /* border: 1px solid; */
+        display: flex;
+        justify-content: space-between;
+        width: 200px;
+        font-size: 33px;
+    }
+    #fb{
+        font-size: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb( 24, 15, 242);
+    }
+    .mobnavbar1{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 30px;
+        /* border: 1px solid; */
+        height: 50px;
+        width: 100%;
+    }
+    #mobpic{
+        border-radius: 50px;
+        height: 40px;
+        width: 40px;
+    }
+    .mobnavbar2{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        /* border: 1px solid; */
+        height: 75px;
+        width: 100%;
+    }
+    #mobnavbar2pic{
+        height: 60px;
+        width: 60px;
+        border-radius: 50px;
+    }
+    #mobnavbar2search{
+        border-radius: 30px;
+        font-size: 30px;
+        padding-left: 20px;
+        color: black;
+        width: 500px;
+        height: 50px;
+    }
+    #mobnavbar2icon{
+        font-size: 40px;
+        color: rgb(248, 63, 63);
+    }
+    .navbar{
+        display: block;
+        width: 100%;
+        height: 175px;
+    }
+    .centre{
+        margin-top: 75px;
+    }
+    .card{
+        top: 110px;
+    }
+    .centerpost{
+        margin-top: 10px;
+    }
+    .left{
+        display: none;
+    }
+    .right{
+        display: none;
+    }
+}
+@media only screen and (min-width: 481px) {
+    .link{
+        display: none;
+    }
+    .topsearch{
+        display: none;
+    }
+    .search{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .bottom1{
+        display: none;
+    }
+    .mobnavbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* border: 1px solid; */
+        height: 50px;
+        width: 100%;
+    }
+    .mobicon{
+        /* border: 1px solid; */
+        display: flex;
+        justify-content: space-between;
+        width: 200px;
+        font-size: 33px;
+    }
+    #fb{
+        font-size: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb( 24, 15, 242);
+    }
+    .mobnavbar1{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 30px;
+        /* border: 1px solid; */
+        height: 50px;
+        width: 100%;
+    }
+    #mobpic{
+        border-radius: 50px;
+        height: 40px;
+        width: 40px;
+    }
+    .mobnavbar2{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        /* border: 1px solid; */
+        height: 75px;
+        width: 100%;
+    }
+    #mobnavbar2pic{
+        height: 60px;
+        width: 60px;
+        border-radius: 50px;
+    }
+    #mobnavbar2search{
+        border-radius: 30px;
+        font-size: 30px;
+        padding-left: 20px;
+        color: black;
+        width: 500px;
+        height: 50px;
+    }
+    #mobnavbar2icon{
+        font-size: 40px;
+        color: rgb(248, 63, 63);
+    }
+    .navbar{
+        display: block;
+        width: 100%;
+        height: 175px;
+    }
+    .centre{
+        margin-top: 75px;
+    }
+    .card{
+        top: 110px;
+    }
+    .centerpost{
+        margin-top: 10px;
+    }
+    .left{
+        display: none;
+    }
+    .right{
+        display: none;
+    }
+}
